@@ -7,8 +7,6 @@
 
 #include <cmath>
 
-namespace igl { namespace FastWindingNumber {
-
 struct v4si {
 	int32 v[4];
 };
@@ -395,6 +393,6 @@ int SYS_FORCE_INLINE _mm_movemask_ps(const v4sf& v) {
 		(int(std::signbit(v.v[3]))<<3)
 	);
 }
-}}
+
 #endif
 #endif
