@@ -28,6 +28,8 @@
 #ifndef __VM_SSEFunc__
 #define __VM_SSEFunc__
 
+#ifdef __SSE__
+
 #include "SYS_Types.h"
 
 #if defined(_MSC_VER)
@@ -396,4 +398,5 @@ vm_allbits(const v4si &a)
 // Float to integer conversion
 #define VM_IFLOAT	_mm_cvtepi32_ps
 
+#endif
 #endif

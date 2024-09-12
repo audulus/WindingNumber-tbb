@@ -34,6 +34,7 @@
 //#define FORCE_NON_SIMD
 
 #include "VM_SSEFunc.h"
+#include "VM_SIMDFunc.h"
 
 class v4uf;
 
