@@ -13,11 +13,11 @@ let package = Package(
             targets: ["WindingNumber"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Audulus/tbb-spm", branch: "main"),
+        .package(url: "https://github.com/Audulus/oneTBB", branch: "spm"),
     ],
     targets: [
         .target(name: "WindingNumber",
-                dependencies: [.product(name: "tbb", package: "tbb-spm")],
+                dependencies: ["oneTBB"],
                 path: ".",
                 sources: ["UT_SolidAngle.cpp", "UT_Array.cpp"],
                 publicHeadersPath: "."),
